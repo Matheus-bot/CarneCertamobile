@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "418853669461",
+    "project_id": "carnecertamobile",
+    "storage_bucket": "carnecertamobile.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418853669461:android:aaf07969098cab718722dc",
+        "android_client_info": {
+          "package_name": "com.example.carnecertamobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyZ81wsIJGDT5jG2yuNUbiAZxZsIEBn78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
