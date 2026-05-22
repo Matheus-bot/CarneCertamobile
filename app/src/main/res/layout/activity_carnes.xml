@@ -16,11 +16,33 @@
         android:textSize="28sp"
         android:textStyle="bold"/>
 
+    <EditText
+        android:id="@+id/edtCarne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o nome da carne"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnAdicionar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Carne"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limpar Lista"
+        android:layout_marginTop="10dp"/>
+
     <TextView
         android:id="@+id/txtLista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Carnes"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:layout_marginTop="30dp"/>

@@ -66,7 +66,40 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
         }
 
+        cursor.close();
+
         return lista.toString();
+
+    }
+
+    public void limparCarnes() {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        db.delete("carnes", null, null);
+
+        db.close();
+
+    }
+
+    public void inserirCarnesIniciais() {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor cursor = db.rawQuery(
+                "SELECT * FROM carnes",
+                null
+        );
+
+        if(cursor.getCount() == 0) {
+
+            inserirCarne("Acém");
+            inserirCarne("Contra-filé");
+            inserirCarne("Paleta");
+
+        }
+
+        cursor.close();
 
     }
 }

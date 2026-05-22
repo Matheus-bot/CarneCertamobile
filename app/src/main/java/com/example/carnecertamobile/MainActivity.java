@@ -17,11 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         DataBaseHelper banco = new DataBaseHelper(this);
 
-        banco.getWritableDatabase();
-
-        banco.inserirCarne("Acém");
-        banco.inserirCarne("Contra-filé");
-        banco.inserirCarne("Paleta");
+        banco.inserirCarnesIniciais();
 
         btnCarnes = findViewById(R.id.btnCarnes);
 
