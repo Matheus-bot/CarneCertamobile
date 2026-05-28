@@ -6,9 +6,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 
 public class TeladeLogin extends AppCompatActivity {
 
@@ -20,6 +24,11 @@ public class TeladeLogin extends AppCompatActivity {
     Button btnGoogle;
 
     FirebaseAuth auth;
+
+    GoogleSignInClient googleSignInClient;
+
+    private final int RC_SIGN_IN = 100;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +43,21 @@ public class TeladeLogin extends AppCompatActivity {
         btnGoogle = findViewById(R.id.btnGoogle);
 
         auth = FirebaseAuth.getInstance();
+
+        GoogleSignInOptions googleSignInOptions =
+                new GoogleSignInOptions.Builder(
+                        GoogleSignInOptions.DEFAULT_SIGN_IN
+                )
+                        .requestIdToken(getString(R.string.default_web_client_id))
+                        .requestEmail()
+                        .build();
+
+        googleSignInClient =
+                GoogleSignIn.getClient(
+                        this,
+                        googleSignInOptions
+                );
+
 
         btnEntrar.setOnClickListener(v -> {
 
@@ -126,13 +150,39 @@ public class TeladeLogin extends AppCompatActivity {
 
         btnGoogle.setOnClickListener(v -> {
 
+            Intent signInIntent =
+                    googleSignInClient.getSignInIntent();
+
+            startActivityForResult(
+                    signInIntent,
+                    RC_SIGN_IN
+            );
+
+        });
+
+    }
+    @Override
+    protected void onActivityResult(
+            int requestCode,
+            int resultCode,
+            @Nullable Intent data
+    ) {
+
+        super.onActivityResult(
+                requestCode,
+                resultCode,
+                data
+        );
+
+        if(requestCode == RC_SIGN_IN) {
+
             Toast.makeText(
                     this,
-                    "Google Login será implementado",
+                    "Login Google iniciado",
                     Toast.LENGTH_SHORT
             ).show();
 
-        });
+        }
 
     }
 }
