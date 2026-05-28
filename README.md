@@ -15,6 +15,7 @@ Aplicativo Android desenvolvido em AndroidStudio-Java inspirado no projeto Carne
 -> Login com email e senha  
 -> Persistência local de dados  
 -> Interface mobile responsiva  
+-> Login com google 
 
 ## Tecnologias utilizadas
 
