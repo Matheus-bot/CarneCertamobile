@@ -10,6 +10,12 @@ Aplicativo Android desenvolvido em AndroidStudio-Java inspirado no projeto Carne
 -> Interface Dark Mode
 -> Estrutura inicial Android Studio
 
+-> Firebase Authentication  
+-> Cadastro de usuários  
+-> Login com email e senha  
+-> Persistência local de dados  
+-> Interface mobile responsiva  
+
 ## Tecnologias utilizadas
 
 -> Java
