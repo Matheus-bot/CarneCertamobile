@@ -36,6 +36,7 @@
             android:layout_marginBottom="15dp">
 
             <TextView
+                android:id="@+id/txtCarne1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Acém"
@@ -62,6 +63,7 @@
             android:layout_marginBottom="15dp">
 
             <TextView
+                android:id="@+id/txtCarne2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Contra-filé"
@@ -88,6 +90,7 @@
             android:layout_marginBottom="15dp">
 
             <TextView
+                android:id="@+id/txtCarne3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Paleta"

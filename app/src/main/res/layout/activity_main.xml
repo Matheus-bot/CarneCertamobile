@@ -53,13 +53,16 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:id="@+id/cardChurrasco"
                 android:layout_width="0dp"
                 android:layout_height="140dp"
                 android:layout_weight="1"
                 android:orientation="vertical"
                 android:background="#1E1E1E"
                 android:gravity="center"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                android:focusable="true"
+                android:clickable="true">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -77,13 +80,16 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/cardPanela"
                 android:layout_width="0dp"
                 android:layout_height="140dp"
                 android:layout_weight="1"
                 android:orientation="vertical"
                 android:background="#1E1E1E"
                 android:gravity="center"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                android:focusable="true"
+                android:clickable="true">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -108,13 +114,16 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:id="@+id/cardHamburguer"
                 android:layout_width="0dp"
                 android:layout_height="140dp"
                 android:layout_weight="1"
                 android:orientation="vertical"
                 android:background="#1E1E1E"
                 android:gravity="center"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:focusable="true">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -123,22 +132,26 @@
                     android:textSize="35sp"/>
 
                 <TextView
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Hambúrguer"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/cardBife"
                 android:layout_width="0dp"
                 android:layout_height="140dp"
                 android:layout_weight="1"
                 android:orientation="vertical"
                 android:background="#1E1E1E"
                 android:gravity="center"
-                android:layout_margin="5dp">
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:focusable="true">
 
                 <TextView
                     android:layout_width="wrap_content"
