@@ -3,6 +3,7 @@ package com.example.carnecertamobile;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +12,8 @@ public class Preferencias extends AppCompatActivity {
     Button btnMacia;
     Button btnBarata;
     Button btnMagra;
+    Button btnVoltar;
+    TextView txtCategoria;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +23,8 @@ public class Preferencias extends AppCompatActivity {
         btnMacia = findViewById(R.id.btnMacia);
         btnBarata = findViewById(R.id.btnBarata);
         btnMagra = findViewById(R.id.btnMagra);
+        btnVoltar = findViewById(R.id.btnVoltar);
+        txtCategoria = findViewById(R.id.txtCategoria);
 
         String categoria =
                 getIntent().getStringExtra("categoria");
@@ -85,5 +90,13 @@ public class Preferencias extends AppCompatActivity {
             startActivity(tela);
 
         });
+
+        btnVoltar.setOnClickListener(v -> {
+            finish();
+        });
+
+        txtCategoria.setText(
+                "Preferências para " + categoria
+        );
     }
 }

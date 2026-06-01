@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,8 +57,52 @@ public class MainActivity extends AppCompatActivity {
             startActivity(tela);
 
         });
+        cardPanela.setOnClickListener(v -> {
+
+            Intent tela = new Intent(
+                    MainActivity.this,
+                    Preferencias.class
+            );
+
+            tela.putExtra(
+                    "categoria",
+                    "panela"
+            );
+
+            startActivity(tela);
+
+        });
+        cardHamburguer.setOnClickListener(v -> {
+
+            Intent tela = new Intent(
+                    MainActivity.this,
+                    Preferencias.class
+            );
+
+            tela.putExtra(
+                    "categoria",
+                    "hamburguer"
+            );
+
+            startActivity(tela);
+
+        });
+        cardBife.setOnClickListener(v -> {
+
+            Intent tela = new Intent(
+                    MainActivity.this,
+                    Preferencias.class
+            );
+
+            tela.putExtra(
+                    "categoria",
+                    "bife"
+            );
+
+            startActivity(tela);
+
+        });
 
     }
-
 
 }
