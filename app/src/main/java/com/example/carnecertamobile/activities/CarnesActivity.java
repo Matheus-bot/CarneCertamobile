@@ -1,5 +1,6 @@
 package com.example.carnecertamobile.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -22,6 +23,8 @@ public class CarnesActivity extends AppCompatActivity {
     TextView txtCarne2;
     TextView txtCarne3;
 
+    Button btnAcougues;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +33,21 @@ public class CarnesActivity extends AppCompatActivity {
 
         btnVoltar = findViewById(R.id.btnVoltar);
 
+        btnAcougues = findViewById(R.id.btnAcougues);
+
         btnVoltar.setOnClickListener(v -> {
             finish();
+        });
+
+        btnAcougues.setOnClickListener(v -> {
+
+            Intent tela = new Intent(
+                    CarnesActivity.this,
+                    AcouguesActivity.class
+            );
+
+            startActivity(tela);
+
         });
 
         txtCarne1 = findViewById(R.id.txtCarne1);

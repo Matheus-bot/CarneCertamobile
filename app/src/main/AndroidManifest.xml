@@ -23,6 +23,9 @@
         <activity
             android:name=".activities.TeladeLogin"
             android:exported="false" />
+        <activity
+            android:name=".activities.AcouguesActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
