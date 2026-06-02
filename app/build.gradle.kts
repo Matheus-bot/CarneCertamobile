@@ -40,7 +40,12 @@ dependencies {
     implementation("com.google.android.gms:play-services-auth:21.2.0")
 
     implementation("androidx.room:room-runtime:2.7.2")
+
     annotationProcessor("androidx.room:room-compiler:2.7.2")
+
+    implementation("com.google.android.gms:play-services-location:21.3.0")
+
+
 
     implementation(libs.appcompat)
     implementation(libs.material)

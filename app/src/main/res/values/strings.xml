@@ -2,4 +2,6 @@
     <string name="app_name">CarneCertaMobile</string>
     <!-- Replace this with your actual Web Client ID from Firebase/Google Cloud Console -->
     <string name="default_web_client_id">YOUR_WEB_CLIENT_ID.apps.googleusercontent.com</string>
+    <string name="location_format">Lat: %1$.6f\nLng: %2$.6f</string>
+    <string name="location_not_found">Não foi possível obter a localização.</string>
 </resources>
