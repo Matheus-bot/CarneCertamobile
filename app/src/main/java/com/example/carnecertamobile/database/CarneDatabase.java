@@ -1,9 +1,12 @@
-package com.example.carnecertamobile;
+package com.example.carnecertamobile.database;
 
 import androidx.room.Database;
 import androidx.room.RoomDatabase;
 import android.content.Context;
 import androidx.room.Room;
+
+import com.example.carnecertamobile.model.Carne;
+import com.example.carnecertamobile.dao.CarneDao;
 
 @Database(
         entities = {Carne.class},

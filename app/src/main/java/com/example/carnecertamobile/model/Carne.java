@@ -1,4 +1,4 @@
-package com.example.carnecertamobile;
+package com.example.carnecertamobile.model;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;

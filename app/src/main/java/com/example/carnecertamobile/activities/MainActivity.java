@@ -1,11 +1,14 @@
-package com.example.carnecertamobile;
+package com.example.carnecertamobile.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
-import java.util.List;
+
+import com.example.carnecertamobile.model.Carne;
+import com.example.carnecertamobile.database.CarneDatabase;
+import com.example.carnecertamobile.R;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -32,9 +35,7 @@ public class MainActivity extends AppCompatActivity {
         CarneDatabase banco =
                 CarneDatabase.getInstance(this);
 
-        if(banco.carneDao()
-                .buscarCarnes("churrasco", "macia")
-                .isEmpty()) {
+        if(banco.carneDao().contarCarnes() == 0){
 
             // CHURRASCO MACIA
             banco.carneDao().inserir(new Carne("Picanha", "churrasco", "macia"));

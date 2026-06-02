@@ -1,4 +1,4 @@
-package com.example.carnecertamobile;
+package com.example.carnecertamobile.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,7 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.carnecertamobile.R;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
