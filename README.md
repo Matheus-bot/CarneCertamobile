@@ -6,9 +6,9 @@ Aplicativo Android desenvolvido em AndroidStudio-Java inspirado no projeto Carne
 
 -> Navegação entre telas
 -> Integração com SQLite
+-> Banco de dados local ROOM
 -> CRUD simples de carnes
--> Interface Dark Mode
--> Estrutura inicial Android Studio
+-> Interface Light and Dark Mode
 
 -> Firebase Authentication  
 -> Cadastro de usuários  
@@ -16,6 +16,7 @@ Aplicativo Android desenvolvido em AndroidStudio-Java inspirado no projeto Carne
 -> Persistência local de dados  
 -> Interface mobile responsiva  
 -> Login com google 
+-> Estrutura da geolocalização 
 
 ## Tecnologias utilizadas
 
